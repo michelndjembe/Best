@@ -1,0 +1,96 @@
+/*
+=========================
+responsive login form
+=========================
+*/
+
+.avatar {
+    vertical-align: middle;
+    width: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+    }
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    
+}
+
+form{
+    margin: 25%;
+    width: 50%;
+}
+.text{
+    width: 100%;
+    padding: .6em 0 .6em 0;
+    margin-bottom: 10px;
+}
+
+#un, #lab{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    width: 100.5%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: .6em 0;
+    margin: .8em 0;
+    cursor: pointer;
+
+}
+
+fieldset{
+    display: block;
+    border: 2px solid grey;
+    font-family: sans-serif;
+    padding: 1em 0 0 0;
+    width: 100%;
+}
+
+.cancelbutton {
+    width: auto;
+    padding: 1em;
+    background-color: #f44336;
+    }
+ span {
+    float: right;
+    padding-top: 1em;
+   }
+.imgcont {
+    text-align: center;
+    margin: 2em 0 1.2em 0;
+}
+a {
+    color: black;
+}
+
+div{
+    padding: 0 1.5em 0 1em;
+}
+
+
+.buttom{
+    margin-top: 1.2em;
+    width: 90%;
+    padding: 0 5% 0 5%;
+    background-color:#f1f1f1;
+    border-top: solid lightgray 1px;
+}
+
+i{
+    float: right;
+    font-size: medium;
+    border: black solid 1px;
+    border-radius: 55%;
+}
+
+i:hover{
+    background-color: red;
+    border: #f44336 solid 1px;
+    border-radius: 55%;
+}
+

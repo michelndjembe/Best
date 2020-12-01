@@ -1,0 +1,26 @@
+body{
+    padding: 0px;
+}
+map{
+    float: left;
+    margin: 0px;
+}
+.explain-map{
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    height: 450px;
+    font-size: 20px;
+}
+
+atop-float{
+    clear: both;
+}
+
+.map2{
+    float: right;
+}
+.map3{
+    float:left;
+}

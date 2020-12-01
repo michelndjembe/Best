@@ -1,0 +1,26 @@
+input[type="checkbox"] {
+    display: none;
+    z-index: 2;
+  }
+label {
+    cursor: pointer;
+    float: left;
+  }
+
+  input[type="checkbox"] + label:before {
+    border: 1px solid black;
+    content: "";
+    display: block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 2px;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+  }
+  input[type="checkbox"]:checked + label:before {
+    background: green;
+    color: white;
+    content: "\2713";
+    text-align: center;
+  }

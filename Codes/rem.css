@@ -1,0 +1,19 @@
+html{
+    font-size:3rem ;
+}
+body{
+    font-size: 20px;
+}
+
+.home{
+    height: 200px;
+    font-size: 2rem;
+}
+
+#delegate{
+color: red;
+}
+
+span{
+    font-size: 2rem;
+}
