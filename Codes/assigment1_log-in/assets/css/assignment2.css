@@ -3,7 +3,9 @@
 responsive login form
 =========================
 */
-
+body{
+    background-color: rgb(195, 195, 255);
+}
 .avatar {
     vertical-align: middle;
     width: 50%;
@@ -21,11 +23,18 @@ ul{
 form{
     margin: 25%;
     width: 50%;
+
 }
 .text{
     width: 100%;
-    padding: .6em 0 .6em 0;
+    padding: .6em 0 .6em .3rem;
+    border: double gray .5px;
     margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.text:active{
+    border-radius: 15px;
 }
 
 #un, #lab{
@@ -46,6 +55,7 @@ button {
 fieldset{
     display: block;
     border: 2px solid grey;
+    background-color: white;
     font-family: sans-serif;
     padding: 1em 0 0 0;
     width: 100%;
