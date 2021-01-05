@@ -1,0 +1,271 @@
+/*==================General====================*/
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Langar;
+    background: linear-gradient(115deg, #56d8e4, rgba(255, 255, 255, 0.856), rgba(163, 130, 38, 0.918));
+
+}
+
+.center{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.container{
+    background-color: white;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    padding: 2rem;
+
+}
+/*=========x========General==========x=========*/ 
+
+/*==================Login Form=================*/
+#masquer{
+    display: block;
+}
+
+
+.center{
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 21rem;
+    padding: 3rem;
+    box-shadow: 0 0 .4px rgba(0, 0, 0, .1);
+    transform: translate(-50%, -50%);
+}
+
+.container .text{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    font-family: Lobster;
+}
+
+.container form{
+    margin-top: 2%;
+}
+
+.container form .data{
+    height: 2rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.container form .data input{
+    width: 100%;
+    height: 100%;
+    padding-left: .3rem;
+    font-size: .8rem;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    padding-left: 1rem;
+}
+form .data input:hover, form .data input:focus{
+    box-shadow: 0 1px 1px black;
+}
+
+form .btn{
+    margin: 1.3rem 0;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+form .btn .inner{
+    height: 8%;
+    width: 30%;
+    border-radius: 15px;
+    position: absolute;
+    background: linear-gradient(to left, #56d8e4, rgba(163, 130, 38, 0.918));
+    z-index: 1;
+    transition: all .7s;
+}
+
+form .btn:hover .inner{
+    background: linear-gradient(to right, #56d8e4, rgba(163, 130, 38, 0.918));
+    width: 70%;
+    border-radius: 15px;
+}
+
+.close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+
+form .btn .inner button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 1rem 0 1rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+}
+
+form .forgot-pass{
+    margin-left: 13.5rem;
+    text-decoration: none;
+
+}
+
+.sign-up{
+    text-align: center;
+    margin-left: 13.5rem;
+}
+
+
+.sign-up a{
+    text-decoration: none;
+    color: teal;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+
+/*=========x========Login Form========x========*/
+
+
+
+/*================== Issues part=================*/
+#issue{
+    display: none;
+}
+.display-issue h1{
+    text-align: center;
+    font-family: polya;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 1.5rem; 
+}
+
+.display-issue h2{
+    font-family: Pacifico;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 1.5rem; 
+    text-align: center;
+}
+
+.display-issue button{
+    display: block;
+    position: relative;
+    height: 2rem;
+    width: 15%;
+    margin: 1rem 0;
+    border-radius: 15px;
+    background: #fff;
+    color: teal;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    left: 40%;
+}
+
+.display-issue button:hover{
+    width: 20%;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    transition: all .4s;
+}
+
+
+.issue{
+    display: inline;
+    width: 80%;
+    text-align: center;
+}
+
+.issue-items{
+    padding: 1rem 0;
+    list-style-type: none;
+    vertical-align: top;
+}
+.issue-data{
+    padding: 0 1rem;
+    height:3rem;
+    width: 30%;
+    border-radius: 25px;
+    font-size: 1.4rem;
+    border: 0;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.issue-data:hover, .issue-data:focus{
+    width: 40%;
+    transition: all .4s;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    
+}
+
+
+.details-btn, .update-btn, .delete-btn{
+    height: 1.8rem;
+    width: 9%;
+    margin: .6rem .2rem;
+    border: transparent;
+    border-radius: 15px;
+    background: #fff;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    vertical-align:top;
+    overflow: hidden;
+       text-align: center;
+}
+
+.details-btn{
+    background-color: teal;
+}
+
+.update-btn{
+    background-color: white;
+}
+
+.delete-btn{
+    background-color: rgba(255, 196, 0, 0.959);
+}
+
+
+.details-btn:hover, .update-btn:hover, .delete-btn:hover{
+    width: 10%;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    transition: all .4s;
+}
+
+
+
+
+/*=========x========Issues part========x========*/

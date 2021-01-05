@@ -1,0 +1,30 @@
+/* font-family: POLYA */
+@font-face{
+    font-family: POLYA;
+    src: url('../fonts/POLYA/POLYA.otf')
+}
+/* font-family: Pacifico */
+@font-face{
+    font-family: Pacifico;
+    src: url('../fonts/Pacifico/Pacifico-Regular.ttf')
+}
+/* font-family: Lobster */
+@font-face{
+    font-family: Lobster;
+    src: url('../fonts/Lobster/Lobster-Regular.ttf')
+}
+/* font-family: Langar */
+@font-face{
+    font-family: Langar;
+    src: url('../fonts/Langar/Langar-Regular.ttf')
+}
+/* font-family: IndieFlower */
+@font-face{
+    font-family: IndieFlower;
+    src: url('../fonts/Indie_Flower/IndieFlower-Regular.ttf')
+}
+/* font-family: Beautiful_Roses */
+@font-face{
+    font-family: Beautiful_Roses;
+    src: url('../fonts/Beautiful_Roses/Beautiful\ Roses\ 400.ttf')
+}

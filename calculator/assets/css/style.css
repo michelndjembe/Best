@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+font-family: montserrat;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.form{
+    width: 25em;
+    background-color: teal;
+    border-radius: 15px;
+}
+
+input[type="text"]{
+    display: block;
+    height: 2em;
+    width: 19em;
+    margin-left: 1em;
+    padding-left: .5em;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+.text1{
+    background-color: rgba(0, 0, 0, 0.753);
+    border-bottom: 0;
+    font-size: 1.2rem;
+    margin-top: 2em;
+    color: white;
+    border-top: inset 1px teal;
+    border-left: inset 1px teal;
+    border-right: inset 1px teal;
+}
+.text2{
+    border-top: 0;
+    margin-bottom: 1em;
+    background-color: rgba(0, 0, 0, 0.753);
+    font-size: 1.2rem;
+    color: red;
+    border-bottom: inset 1px teal;
+    border-left: inset 1px teal;
+    border-right: inset 1px teal;
+    text-align: right;
+
+}
+
+form .btn{
+    width: 25em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+.button{
+    display: inline-block;
+}
+input[type="button"]{
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    margin: .2em;
+    line-height: 2em;
+    border-radius: 2px;
+    border: 1px solid #d9d9d9;
+    background: linear-gradient(#d9d9d9, #bfbfbf);
+}
+
+input[type="button"]:hover{
+    transition: .5s;
+    background: linear-gradient( #bfbfbf ,#d9d9d9);
+
+}
+
+#clear{
+    background: red;
+    color: white;
+    border: solid 1px #cc0000;
+
+}
+
+#equal{
+    width: 10em;
+    color: white;
+    background: #ff3d00;
+    border: 1px solid #b32a00;
+}

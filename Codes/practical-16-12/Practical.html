@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/Practical.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>the code</title>
+</head>
+<body  onload="collect()">
+    <div class="register form">
+
+        <form action="" name="formal" class="container">
+            <fieldset >
+
+                <div class="picture">
+                    <button class="close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+                    <div class="image-container"><img src="./assets/img/avatar2.png" width="300rem"></div>
+                    <input type="file" class="image" name="profile_picture" capture>
+                </div><br>
+
+
+                <label>name:</label><br>
+                <span class="input-container containt1">
+                    <input type="text" class="name" name="fname">
+                    <button class="1" type="button"  class="input-btn-update" onclick="document.formal.fname.value=document.formal.fname2.value">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="input-btn-delete" onclick="document.formal.fname2.value=''">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" class="name" name="fname2" disabled>
+                </span><br>
+
+
+                <label>Surname:</label><br>
+                <span class="input-container containt2">
+                    <input type="text" class="name" name="lname" >
+                    <button type="button" class="input-btn-update" onclick="document.formal.lname.value=document.formal.lname2.value">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"  class="input-btn-delete"  onclick="document.formal.lname2.value=''">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" class="name" name="lname2" disabled>
+                </span><br>
+
+
+                <!--<label>Age:</label><br>
+                <span class="input-container containt3">
+                    <input type="date" id="age" class="name" name="age" >
+                    <button type="button" class="input-btn-update" onclick="document.formal.age.value=document.formal.age2.value">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"  class="input-btn-delete"  onclick="document.formal.age2.value=''">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <input type="date" id="age" class="name" name="age2" disabled>
+                </span><br>-->
+
+
+                <label>Contact Number :</label><br>  
+                <span class="input-container containt4">  
+                    <input type="text" id="contact_number" name="contact_number">
+                    <button type="button" class="input-btn-update" onclick="document.formal.contact_number.value=document.formal.contact_number2.value">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"  class="input-btn-delete"  onclick="document.formal.contact_number2.value=''">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" id="contact_number2" name="contact_number2" disabled>
+                </span> <br> 
+
+                <label>Contact Email :</label> <br> 
+                <span class="input-container containt5">       
+                    <input type="email" id="contact_email" name="contact_email" >
+                    <button type="button" class="input-btn-update"   onclick="document.formal.contact_email.value=document.formal.contact_email2.value">
+                        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="input-btn-delete"  onclick="document.formal.contact_email2.value=''">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                    <input type="email" id="contact_email2" name="contact_email2" disabled>
+                </span> <br> 
+ 
+                <button type="button" class="register-btn" onclick="document.formal.contact_email2.value=document.formal.contact_email.value; document.formal.contact_number2.value=document.formal.contact_number.value; document.formal.lname2.value=document.formal.lname.value; document.formal.fname2.value=document.formal.fname.value;">
+                    Register
+                </button><br>
+            </form>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+    
+
+    <script src="./assets/js/Practical.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="form">
+        <form name="form1" action="">
+            <input type="text" id="display1" class="text1" name="case1" disabled>
+            <input type="text" id="display2" class="text2" name="case2" disabled>
+            <div class="btn">
+                <div class="button ope">
+                    <input type="button" Class="numbers" id="seven" value="7" onClick="saisie(7)">
+                    <input type="button" id="eight" value="8" onClick="saisie(8)">
+                    <input type="button" id="nine" value="9" onClick="saisie(9)">
+                    <input type="button" id="div" value="/" onClick="signe('/')"><br>
+                    <input type="button" id="four" value="4" onClick="saisie(4)">
+                    <input type="button" id="five" value="5" onClick="saisie(5)">
+                    <input type="button" id="six" value="6" onClick="saisie(6)">
+                    <input type="button" id="start" value="*" onClick="signe('*')"><br>
+                    <input type="button" id="one" value="1" onClick="saisie(1)">
+                    <input type="button" id="two" value="2" onClick="saisie(2)">
+                    <input type="button" id="three" value="3" onClick="saisie(3)">
+                    <input type="button" id="add" value="+" onClick="signe('+')"><br>
+                    <input type="button" id="dot" value="." onClick="saisie('.')">
+                    <input type="button" id="zero" value="0" onClick="saisie(0)">
+                    <input type="button" id="Exp" value="Exp" onClick="saisie(9)">
+                    <input type="button" id="subs" value="-" onClick="signe('-')"><br>
+                    <input type="button" id="equal" value="=" onClick="calcul()">
+                </div> 
+
+                <div class="button scientific">
+                    <input type="button" id="clear" value="C" onClick="document.form1.case1.value=''" >
+                    <input type="button" id="memos" value="MS" readonly="readonly" value="" name="memory" onClick="memoire(1)">
+                    <input type="button" id="memor" value="MR" onClick="memoire(2)">
+                    <input type="button" id="mod" value="mod"  onClick="signe('%')"><br>
+                    <input type="button" id="sqrt" value="sqrt"  onClick="scientific(1)">
+                    <input type="button" id="pi" value="pi" onClick="scientific(3)">
+                    <input type="button" id="Abs" value="Abs" onClick="scientific(2)">
+                    <input type="button" id="pow" value="pow" onClick="signe('puissance')"><br>
+                    <input type="button" id="sin" value="sin" onClick="scientific(4)">
+                    <input type="button" id="cos" value="cos" onClick="scientific(5)">
+                    <input type="button" id="tan" value="tan" onClick="scientific(6)">
+                    <input type="button" id="cotan" value="cotan" onClick="scientific(14)"><br>
+                    <input type="button" id="log" value="log" onClick="scientific(7)">
+                    <input type="button" id="ln" value="ln"  onClick="scientific(9)">
+                    <input type="button" id="expo" value="e"  onClick="scientific(8)">
+                    <input type="button" id="lq" value="("  onClick="saisie('(')"><br>
+                    <input type="button" id="Acos" value="Acos"  onClick="scientific(12)">
+                    <input type="button" id="Asin" value="Asin"  onClick="scientific(11)">
+                    <input type="button" id="Atan" value="Atan" onClick="scientific(13)">
+                    <input type="button" id="rq" value=")"  onClick="saisie(')')"><br>
+
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/script.js">
+    </script>
+</body>
+</html>

@@ -3,3 +3,6 @@
 [1112/141253.047:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [1112/232045.990:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
 [1129/034747.622:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[1206/130925.598:ERROR:crash_report_database_win.cc(496)] failed to stat report
+[1206/130925.632:ERROR:crash_report_database_win.cc(496)] failed to stat report
+[1206/130925.632:ERROR:crash_report_database_win.cc(496)] failed to stat report

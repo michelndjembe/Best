@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>test 2</title>
+</head>
+<body>
+    <!------------------login form------------------>
+    <div id="masquer" class="center">
+        <div class="container">
+            <label for=""><button type="button" class="close-btn fa fa-times" onclick="masquer_div('masquer')">X</button> </label>
+            <div id="login" class="text">Login Form</div>
+                <form name="form" action="#">
+                    <div class="data">
+                        <label for="">Email</label><br>
+                        <input name="usermail" id="email" type="email" maxlength="30" minlength="2" required>
+                    </div>
+                    <div class="data">
+                        <label for="">Passsword</label><br>
+                        <input name="password" id="password" type="password" maxlength="20" minlength="7" required>
+                    </div>
+                    <div class="forgot-pass"><a href="#">Forgot Password</a></div>
+                    <div class="btn">
+                        <div class="inner"><button id="log-btn" type="button" onclick="sign()">login</button></div>
+                    </div>
+                    <div class="sign-in">Not a member?<a href="#" onclick="masquer_div('masquer2')">Signup now</a></div>
+                </form>
+        </div>
+    </div>
+    <!---------x---------login form---------x--------->
+
+    
+    <!-----------------Issue part------------------>
+        <div id="issue" class="container-issue">
+            <div class="display-issue">
+                <h1>Track For me</h1>
+                <h2> We are keeping track on your issues</h2>
+                <button id="add-issue" class="add-issue fa fa-plus fa-2x" onclick="addIssue()"> add issues</button>  
+            </div>
+            
+        </div>
+    <!---------x---------Issue part---------x--------->
+
+
+<script src="assets/script.js"></script>
+</body>
+</html>

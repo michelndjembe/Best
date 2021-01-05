@@ -1,0 +1,40 @@
+TOUS SAVOIR SUR @Track For me@
+
+
+Qu'est ce que @Track For me@ ?
+=====================================================
+
+	C'est une application permettant de suivre des taches precises suivant un temps d'application specifie. 
+Il vous permettra de garder en vus vos objectifs et de rendre effectifs vos projets en controlant votre progression selon
+vos desirs et recommandations
+
+======================================================
+
+
+Comment est concue @Track For me@ ?
+======================================================
+
+Dans sa conception entrent en jeux 
+	=>  HTML (Hyper Text Markup Language) : Qui est un langage de programmation des pages webs statique de font
+	=>  CSS  (Cascade Style Sheet) : Qui est un langage de pragrammation des pages web statique de forme
+	=>  JS   (JavaScript) : Qui est un langage en suite d'intructions ordonnees objets, de dynamisation des pages web
+
+
+======================================================
+
+Comment fonctionne @Track For me@ ?
+======================================================
+	Nous procedons d'abord a une verifications des identifications dans le but de proteger vos travaux et assurer une
+confidencialite. donc on aura
+signup form = pour s.enregistrer et commencer a trvailler
+login form = apres enregistrement, apres fermerture de la sesson il vous est demande de rentrer votre *email* et votre *password*
+		pour acceder de nouveau a votre session
+issue part = il sagit du font de l'application vous permettant d'ajouter, enlever et apporter des details (temps de realisation
+, debut, fin...etc) a vos projet.
+
+======================================================
+
+
+
+
+

@@ -1,0 +1,151 @@
+<html>
+<head><title>Calculatrice 2.0</title>
+<script language="javascript">
+var operateur,a,b,n,mr,ms,point=1;
+var tourClic=false;
+
+function saisie(c)
+{	
+	if(tourClic)
+	{
+		tourClic=false;
+		document.form1.case1.value="";
+	}
+	document.form1.case1.value +=c;
+}
+
+function signe(ope)
+{
+	a=parseFloat(document.form1.case1.value);
+	operateur=ope;
+	document.form1.case1.value="";
+	tourClic=true;
+}
+	
+function calcul()
+{
+	if (operateur == 'puissance')
+	{
+		document.form1.case1.value = Math.pow(a,parseFloat(document.form1.case1.value));
+	}
+	if (operateur != 'puissance')
+	{
+	document.form1.case1.value = eval("a" +operateur+ parseFloat(document.form1.case1.value));
+	tourClic=false;
+	}
+		
+}
+function scientific(n)
+{
+	a=parseFloat(document.form1.case1.value);
+
+	switch (n)
+	{ 
+		case 1:document.form1.case1.value = Math.sqrt(a); break;
+		case 2:document.form1.case1.value = Math.abs(a); break;
+		case 3:document.form1.case1.value = Math.PI; break;
+		case 4:document.form1.case1.value = Math.sin(a); break;
+		case 5:document.form1.case1.value = Math.cos(a); break;
+		case 6:document.form1.case1.value = Math.tan(a); break;
+		case 7:document.form1.case1.value = Math.log(a); break;
+		case 8:document.form1.case1.value = Math.exp(a); break;
+		case 9:document.form1.case1.value = Math.LN2; break;
+		case 10:document.form1.case1.value = Math.LN10; break;
+		case 11:document.form1.case1.value = Math.asin(a); break;
+		case 12:document.form1.case1.value = Math.acos(a); break;
+		case 13:document.form1.case1.value = Math.atan(a); break;
+	}
+}
+function memoire(n)
+{
+	switch (n)
+	{
+		case 1: ms=parseFloat(document.form1.case1.value);document.form1.memory.value=ms; break;
+		case 2: document.form1.case1.value=ms; break;
+	}
+}
+	
+	
+
+</script>
+</head>
+<body>
+<form name="form1">
+<table align="center" border="0" cellspacing="0" cellpadding="6" bgcolor="#456ae5d">
+	<tr>
+		<td>
+			<input type="text" value="" name="case1"/>
+		</td>
+		<td>
+			<input type="button" value=" C "  onClick="document.form1.case1.value=''"/>
+			<font size="1" color="#ff0000"> MS <input type="text" size="17" readonly="readonly" value="" name="memory"/>			
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="">
+			<input type="button" value=" 1 " onClick="saisie(1)"/>
+			<input type="button" value=" 2 " onClick="saisie(2)"/>
+			<input type="button" value=" 3 " onClick="saisie(3)"/>
+		</td>
+		<td align="center" colspan="">
+			<input type="button" value=" * " onClick="signe('*')"/>
+			<input type="button" value=" / " onClick="signe('/')"/>
+			<input type="button" value=" + " onClick="signe('+')"/>
+			<input type="button" value=" - " onClick="signe('-')"/>
+			<input type="button" value=" MS " onClick="memoire(1)"/>
+			<input type="button" value=" MR " onClick="memoire(2)"/>
+		</td>
+	</tr>
+		<tr>
+		<td align="center" colspan="">
+			<input type="button" value=" 4 " onClick="saisie(4)"/>
+			<input type="button" value=" 5 " onClick="saisie(5)"/>
+			<input type="button" value=" 6 " onClick="saisie(6)"/>
+		</td>
+		<td align="center">
+			<input type="button" value=" mod " onClick="signe('%')"/>
+			<input type="button" value="  sqrt  " onClick="scientific(1)"/>
+			<input type="button" value="   Pi   " onClick="scientific(3)"/>
+			<input type="button" value="  Abs  " onClick="scientific(2)"/>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="">
+			<input type="button" value=" 7 " onClick="saisie(7)"/>
+			<input type="button" value=" 8 " onClick="saisie(8)"/>
+			<input type="button" value=" 9 " onClick="saisie(9)"/>
+		</td>
+		<td align="center">
+			<input type="button" value="  x^y  " onClick="signe('puissance')"/>
+			<input type="button" value="  Sin  " onClick="scientific(4)"/>
+			<input type="button" value="  Cos  " onClick="scientific(5)"/>
+			<input type="button" value="  Tan  " onClick="scientific(6)"/>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" colspan="">
+			<input type="button" value=" 0 " onClick="saisie(0)"/>
+			<input type="button" value=" . " onClick="saisie('.')"/>
+			<input type="button" value="  =  " onClick="calcul()"/>
+		</td>
+		<td align="center">
+			<input type="button" value="  Log  " onClick="scientific(7)"/>
+			<input type="button" value="  Exp  " onClick="scientific(8)"/>
+			<input type="button" value="  Ln2  " onClick="scientific(9)"/>
+			<input type="button" value=" Ln10 " onClick="scientific(10)"/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		</td>
+		<td align="center">
+			<input type="button" value=" Asin " onClick="scientific(11)"/>
+			<input type="button" value=" Acos " onClick="scientific(12)"/>
+			<input type="button" value=" Atan " onClick="scientific(13)"/>
+			<input type="button" value=" Ln10 " onClick="scientific(10)"/>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

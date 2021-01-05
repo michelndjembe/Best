@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length-word</title>
+</head>
+<body>
+    <script language="javascript">
+        let name,address;
+        name=prompt("Give us your name");
+        address=prompt("Give your address");
+        if (name.length>5 && name.length<10){
+            document.write('your username is =' +name+ '<br>');
+            document.write("Your address is =" +address);
+        }
+        else{
+            while(name.length<=5 || name.length>=10){
+            alert('Your user name is invalid \n Entrer an username with more than 5 character and less than 10');
+            name=prompt("Give us your name");
+            }
+            document.write('your username is =' +name+ '<br>');
+            document.write("Your address is =" +address);
+        }
+    </script>
+    <header class=head
+    
+</body>
+</html>
