@@ -36,7 +36,7 @@ function sign(){
                     document.getElementById('issue').style.display = 'block';
                 }
                 else{
-                    document.form.username.value = 'Your email or password is may be incorrect'
+                    document.form.username.value = 'Your email or password may be incorrect'
                 }
             }
         }
@@ -53,6 +53,7 @@ function sign2(){
     if(document.form2.username2.value!==""){
         if(document.form2.password2.value!==""){
                 if(document.form2.Email.value!==""){
+
     if (!localStorage.getItem('users'))
      localStorage.setItem('users', JSON.stringify([]));
 
@@ -85,7 +86,6 @@ function sign2(){
 
 
 /*----x----Changing page----x----*/
-
 
 
 /*---------Issues part---------*/

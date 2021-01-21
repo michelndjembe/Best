@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Langar;
+    background: linear-gradient(159deg, #5698e4 5%, rgba(206, 24, 151, 0.918));
+}
+
+
+/*============== Student Name ==============*/
+    #CreateStudent{
+        display: block;
+    }
+    .CreateStudent, .StudentsMax{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .studentFild, .maxInput{
+        position: relative;
+        padding: .4rem 1rem;
+        left: 35%;
+        right: 28%;
+        top: 25vh;
+        width: 30%;
+        height: min-content;
+        background-color:rgba(255, 255, 255, 0.63);
+        box-shadow: 2px 2px 2px rgb(66, 60, 60);
+    
+    }
+
+    input[type='text']{
+        width: 80%;
+        height: 1.5rem;
+        padding-left: .45rem;
+        border: solid 1px transparent;
+        border-radius: 15px;
+        margin: .4rem 0;
+    }
+
+    input[type='text']:hover{
+        box-shadow: -1px 1px 1px rgb(66, 60, 60);
+        width: 94%;
+        transition: all .3s;
+    }
+
+    h1{
+        text-align: center;
+        font-family: Lobster;
+        font-weight: 100;
+    }
+    h3{
+        margin-bottom: .6rem;
+        text-align: center;
+        font-family: Pacifico;
+    }
+
+    .btn{
+        position: relative;
+        margin: 0 35%;
+        margin-top: 1rem;
+        width: 20%;
+        height: 2rem;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .4s;
+        background:linear-gradient(-159deg, #5698e4 5%, rgba(206, 24, 151, 0.918));  
+    }
+
+    .btn:hover{
+        width: 30%; 
+        background:linear-gradient(159deg, #5698e4 5%, rgba(206, 24, 151, 0.918));  
+    }
+/*==============X Student Name X==============*/
+
+/*============== Student Max ==============*/
+    #StudentsMax{
+        display: none;
+    }
+/*==============X Student Max X==============*/

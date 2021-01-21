@@ -11,3 +11,4 @@
 [1207/105106.416:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\Makany Michel\AppData\Local\Google\Chrome\User Data\Crashpad\reports\129a9d6e-1aec-4573-a5c5-2a30b0e45647.dmp: Le fichier spécifié est introuvable. (0x2)
 [1207/105106.416:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\Makany Michel\AppData\Local\Google\Chrome\User Data\Crashpad\reports\145f6231-56fe-44a5-ad4a-fa2dafe4d60d.dmp: Le fichier spécifié est introuvable. (0x2)
 [1207/105106.416:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
+[0120/094034.398:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        let maxRate;
+        let exercise=0, Assign=0, ClassPro=0, Exam=0, Project=0;
+        let person;
+        function createStudents (){
+            person= prompt("name of a student");
+            max();
+        }
+
+        function max(){
+            choice=+prompt("which max want you give?  \n 1)Exercises \n 2)Assignments \n 3)Participation \n 4)Exam \n 5)Project \n 6)Calculate max");
+            switch (choice) {
+                case 1:
+                    exercise=+prompt("give max of Exercise");
+                    max();
+                case 2:
+                    Assign=+prompt("give max of Assignment");
+                    max();
+                case 3:
+                    ClassPro=+prompt("give max of Class Project");
+                    max();
+                case 4:
+                    Exam=+prompt("give max of Exam");
+                    max();
+                case 5:
+                    Project=+prompt("give max of Project");
+                    max();
+                case 6:
+                    calcul();
+            }
+        
+
+        }
+
+        function calcul(){
+            maxRate = (exercise+Assign+ClassPro+Exam+Project)/5;
+            alert('The rate of max ' +person+' ' +maxRate);
+            createStudents ();
+        }
+        createStudents ();
+
+    </script>
+    
+</body>
+</html>
